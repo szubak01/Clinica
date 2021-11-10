@@ -1,0 +1,39 @@
+*{
+    primary: #6200EE;
+    secondary: #3700B3 ;
+    primary-light: #BB86FC;
+    secondary-light: #BB86FC;
+}
+
+.main-frame{
+    -fx-pref-width: 1080px;
+    -fx-pref-height: 720px;
+}
+
+.left-bar{
+    -fx-padding:8 0 0 0;
+    -fx-background-color: secondary;
+}
+
+.left-bar-menu{
+    -fx-alignment: center;
+    -fx-spacing: 5px;
+    -fx-pref-height: 80px;
+    -fx-pref-width: 100px;
+    -fx-min-width: 100px;
+}
+
+.left-bar-menu.active{
+    -fx-background-color: primary;
+}
+
+.left-bar-menu:hover{
+    -fx-background-color: primary;
+}
+
+.left-bar-menu, .label, .left-bar-menu SVGPath{
+    -fx-fill: white;
+    -fx-text-fill: white;
+}
+
+

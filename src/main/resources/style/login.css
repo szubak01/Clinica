@@ -1,0 +1,50 @@
+*{
+    primary: #6200EE;
+    secondary: #3700B3 ;
+    primary-light: #BB86FC;
+    secondary-light: #BB86FC;
+}
+
+.login-view{
+    -fx-pref-width: 420px;
+    -fx-background-color: white;
+}
+
+.login-title{
+    -fx-alignment: center-left;
+    -fx-padding: 16px;
+}
+
+.login-title > .header{
+    -fx-font-size: 20px;
+}
+
+.login-body{
+    -fx-padding: 16 64 16 16;
+}
+
+.align-center-left{
+    -fx-alignment: center-left;
+}
+
+.spacing-5{
+    -fx-spacing: 5px;
+}
+
+.width-120px{
+    -fx-pref-width: 140px;
+}
+
+.text-field, .password-field, .button{
+    -fx-background-color: transparent;
+    -fx-border-style: solid;
+    -fx-border-color: primary;
+}
+
+.button:hover, .button:focused{
+    -fx-background-color: linear-gradient(to bottom, #6200EE, #BB86FC);
+    -fx-text-fill: white;
+}
+
+
+

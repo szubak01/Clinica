@@ -1,0 +1,73 @@
+*{
+  primary: #6200EE;
+  secondary: #3700B3 ;
+  primary-light: #BB86FC;
+  secondary-light: #BB86FC;
+}
+
+
+.dialog{
+  -fx-pref-width: 520px;
+  -fx-background-color: white;
+  -fx-border-color: secondary;
+  -fx-border-width: 6 6 6 6;
+
+}
+
+.dialog-icon{
+  -fx-pref-width: 160px;
+  -fx-background-color: white;
+  -fx-alignment: center;
+}
+
+.dialog-icon SVGPath{
+  -fx-fill: primary;
+}
+
+.dialog-body{
+  -fx-padding: 20px;
+  -fx-background-color: transparent;
+  -fx-alignment: center-left;
+}
+
+.dialog-border-left{
+  -fx-border-color: secondary;
+  -fx-border-width: 0 6 0 0;
+}
+
+.dialog-title{
+  -fx-font-size: 24px;
+}
+
+.dialog-message-box{
+  -fx-padding: 20 20 20 20;
+}
+
+.width-120px{
+  -fx-pref-width: 105px;
+}
+
+.spacing-5{
+  -fx-spacing: 5px;
+}
+
+.button{
+  -fx-background-color: transparent;
+  -fx-border-style: solid;
+  -fx-border-color: primary;
+
+}
+
+.button:hover{
+  -fx-background-color: linear-gradient(to bottom, #6200EE, #BB86FC);
+  -fx-text-fill: white;
+}
+
+.button-box{
+  -fx-padding: 20 0 15 0 ;
+}
+
+.comboBoxPadding{
+  -fx-padding: 20 0 20 0;
+}
+

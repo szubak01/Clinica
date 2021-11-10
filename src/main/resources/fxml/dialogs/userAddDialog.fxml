@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="522.0" styleClass="dialog" stylesheets="@../../style/dialogs/logoutDialog.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.dialogs.UserAddController">
+   <children>
+      <VBox stylesheets="@../../style/dialogs/logoutDialog.css">
+         <children>
+            <SVGPath content="M27 0h-24c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h24c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM26 28h-22v-24h22v24zM8 18h14v2h-14zM8 22h14v2h-14zM10 9c0-1.657 1.343-3 3-3s3 1.343 3 3c0 1.657-1.343 3-3 3s-3-1.343-3-3zM15 12h-4c-1.65 0-3 0.9-3 2v2h10v-2c0-1.1-1.35-2-3-2z" />
+         </children>
+         <styleClass>
+            <String fx:value="dialog-icon" />
+            <String fx:value="dialog-border-left" />
+         </styleClass>
+      </VBox>
+      <VBox prefHeight="401.0" prefWidth="198.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label fx:id="title" styleClass="dialog-title" text="Create new user" />
+            <Label fx:id="message" textAlignment="CENTER" textFill="#ff0011" />
+            <VBox styleClass="spacing-5">
+               <children>
+                  <Label text="First name" />
+                  <TextField fx:id="firstName" />
+                  <Label text="Last name" />
+                  <TextField fx:id="lastName" />
+                  <Label layoutX="10.0" layoutY="53.0" text="Login" />
+                  <TextField fx:id="loginField" layoutX="10.0" layoutY="71.0" />
+                  <Label layoutX="10.0" layoutY="96.0" text="Password" />
+                  <TextField fx:id="passwordField" layoutX="10.0" layoutY="114.0" />
+                  <Label layoutX="10.0" layoutY="96.0" text="Gender" />
+                  <ComboBox fx:id="genderBox" prefWidth="150.0" promptText="Select gender" />
+                  <Label layoutX="10.0" layoutY="183.0" text="Role" />
+                  <ComboBox fx:id="roleBox" prefWidth="150.0" promptText="Select role" />
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#close" styleClass="width-120px" text="CLOSE" />
+                  <Button fx:id="saveButton" mnemonicParsing="false" onAction="#save" styleClass="width-120px" text="SAVE" />
+               </children>
+               <styleClass>
+                  <String fx:value="spacing-5" />
+                  <String fx:value="button-box" />
+               </styleClass>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="dialog-body" />
+            <String fx:value="dialog-border-right" />
+            <String fx:value="spacing-5" />
+         </styleClass>
+      </VBox>
+   </children>
+</HBox>

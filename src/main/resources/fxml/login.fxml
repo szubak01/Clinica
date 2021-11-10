@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="600.0"
+  styleClass="login-view" stylesheets="@../style/login.css" xmlns="http://javafx.com/javafx/15.0.1"
+  xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.LoginController">
+   <children>
+      <HBox alignment="CENTER" styleClass="login-title" VBox.vgrow="ALWAYS">
+         <children>
+            <Label styleClass="header" text="Healthcare system " HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="110.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets top="10.0" />
+               </padding></Label>
+         </children>
+      </HBox>
+      <VBox styleClass="VBox" stylesheets="@../style/login.css">
+         <children>
+            <GridPane hgap="10.0" styleClass="login-body" vgap="5.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="274.199951171875" minWidth="10.0" prefWidth="60.8" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="485.6" minWidth="10.0" prefWidth="269.6" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints />
+                <RowConstraints maxHeight="31.19999198913574" minHeight="8.010864256391415E-6" prefHeight="16.000006103515624" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.79999198913574" minHeight="10.0" prefHeight="27.99998779296876" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="49.600012207031256" minHeight="10.0" prefHeight="26.400012207031253" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="66.4" minHeight="10.0" prefHeight="29.599993896484392" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="66.4" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="loginField" promptText="Enter login" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <PasswordField fx:id="passwordField" promptText="Enter password" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="validationMessage" styleClass="valMessage" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Login" GridPane.rowIndex="2" />
+                  <Label text="Password" GridPane.rowIndex="3" />
+                  <HBox GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <Button fx:id="btnClose" mnemonicParsing="false" onAction="#close" styleClass="width-120px" text="CLOSE" />
+                        <Button fx:id="btnLogin" layoutX="10.0" layoutY="12.0" mnemonicParsing="false" onAction="#login" styleClass="width-120px" text="LOGIN" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="align-center-left" />
+                        <String fx:value="spacing-5" />
+                     </styleClass>
+                  </HBox>
+                  <Separator prefWidth="200.0" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</VBox>

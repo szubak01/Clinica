@@ -1,0 +1,118 @@
+*{
+    primary: #6200EE;
+    secondary: #3700B3 ;
+    primary-light: #BB86FC;
+    secondary-light: #BB86FC;
+}
+.content-view{
+    -fx-pref-width: 980px;
+    -fx-pref-height: 720px;
+    -fx-max-width: 5000px;
+    -fx-max-height: 3000px;
+
+}
+
+.content-view-header{
+    -fx-padding: 15px;
+}
+
+.content-view-header > .title{
+    -fx-font-size: 20px;
+    -fx-text-fill: black;
+
+}
+
+.button{
+    -fx-background-color: transparent;
+    -fx-border-style: solid;
+    -fx-border-color: primary;
+
+}
+
+.button:hover{
+    -fx-background-color: linear-gradient(to bottom, #6200EE, #BB86FC);
+    -fx-text-fill: white;
+}
+
+.option-bar{
+    -fx-padding: 0 0 0 20;
+    -fx-background-color: transparent;
+
+}
+
+.width-120px{
+    -fx-pref-width: 120px;
+}
+
+.right-hbox{
+    -fx-alignment: center-left;
+    -fx-padding: 0 0 0 20;
+}
+
+.spacing-nUser{
+    -fx-spacing: 290px;
+}
+
+.spacing-10px{
+    -fx-spacing: 10px;
+}
+
+.spacing-10{
+    -fx-spacing: 5px;
+    -fx-padding: 0 20 0 0;
+}
+
+/* TABLE PROPERTIES */
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .filler{
+    -fx-background-color: transparent;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom, #6200EE, #BB86FC);
+    -fx-background-radius: 0px 0px 0px 0px;
+    -fx-background-insets: 0 0 0 0;
+    -fx-padding: 0 0 5px 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-wrap{
+    -fx-padding: 20px;
+}
+
+
+/* TABLE PROPERTIES CELLS */
+
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-padding: 2 0 2 10px;
+
+}
+.table-row-cell:hover {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color: primary;
+}
+
+/* RECEPTIONIST PANEL */
+
+.left-box{
+    -fx-padding: 0 0 0 15;
+}
+
+.right-box{
+    -fx-padding: 0 15 0 0;
+}
+
+.label{
+    -fx-text-fill: black;
+}

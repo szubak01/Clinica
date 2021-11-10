@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="content-view" stylesheets="@../style/contentView.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.AdminController">
+   <children>
+      <HBox styleClass="content-view-header">
+         <children>
+            <Label fx:id="title" styleClass="title" text="Title">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <VBox prefHeight="9.0" prefWidth="990.0">
+         <children>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+      <HBox prefHeight="38.0" prefWidth="990.0">
+         <children>
+            <HBox>
+               <children>
+                  <Button fx:id="addUserButton" mnemonicParsing="false" onAction="#addNewUser" onMouseClicked="#addNewUser" styleClass="width-120px" text="Add new user" />
+                  <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteUser" styleClass="width-120px" text="Delete" />
+               </children>
+               <styleClass>
+                  <String fx:value="spacing-10px" />
+                  <String fx:value="spacing-nUser" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" HBox.hgrow="ALWAYS">
+               <children>
+                  <TextField fx:id="searchField" prefWidth="150.0" promptText="Search for.." />
+               </children>
+               <styleClass>
+                  <String fx:value="option-bar" />
+                  <String fx:value="spacing-10" />
+               </styleClass>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="option-bar" />
+            <String fx:value="spacing-nUser" />
+         </styleClass>
+      </HBox>
+      <VBox prefHeight="0.0" prefWidth="990.0">
+         <children>
+            <Separator prefWidth="200.0" />
+         </children>
+      </VBox>
+      <VBox styleClass="table-wrap" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="userTableView" prefHeight="568.0" prefWidth="926.0" VBox.vgrow="ALWAYS">
+              <columns>
+
+                <TableColumn maxWidth="1000.0" prefWidth="38.39999580383301" resizable="false" text="ID">
+                  <cellValueFactory>
+                    <PropertyValueFactory property="id" />
+                  </cellValueFactory>
+                </TableColumn>
+
+                <TableColumn editable="false" prefWidth="147.20000457763672" text="First name">
+                  <cellValueFactory>
+                    <PropertyValueFactory property="firstName" />
+                  </cellValueFactory>
+                </TableColumn>
+
+                  <TableColumn editable="false" prefWidth="142.4000244140625" text="Last name">
+                    <cellValueFactory>
+                      <PropertyValueFactory property="lastName" />
+                    </cellValueFactory>
+                  </TableColumn>
+
+                  <TableColumn editable="false" prefWidth="139.99993896484375" text="Login">
+                    <cellValueFactory>
+                      <PropertyValueFactory property="login" />
+                    </cellValueFactory>
+                  </TableColumn>
+
+                  <TableColumn editable="false" prefWidth="153.60000610351562" text="Password">
+                    <cellValueFactory>
+                      <PropertyValueFactory property="password" />
+                    </cellValueFactory>
+                  </TableColumn>
+
+                  <TableColumn editable="false" prefWidth="161.5999755859375" text="Gender">
+                    <cellValueFactory>
+                      <PropertyValueFactory property="gender" />
+                    </cellValueFactory>
+                  </TableColumn>
+
+                  <TableColumn editable="false" minWidth="-1.0" prefWidth="164.800048828125" text="Role">
+                    <cellValueFactory>
+                      <PropertyValueFactory property="role" />
+                    </cellValueFactory>
+                  </TableColumn>
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</VBox>

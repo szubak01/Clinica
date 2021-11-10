@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+  prefHeight="400.0" prefWidth="600.0" styleClass="main-frame"
+  stylesheets="@../style/mainFrame.css" xmlns="http://javafx.com/javafx/15.0.1"
+  xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.MainFrameController">
+   <children>
+      <VBox fx:id="leftBar" styleClass="left-bar">
+         <children>
+            <VBox id="doctorMenu" onMouseClicked="#clickMenu" prefHeight="720.0" prefWidth="143.0">
+               <children>
+                  <SVGPath content="M27 0h-24c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h24c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM26 28h-22v-24h22v24zM8 18h14v2h-14zM8 22h14v2h-14zM10 9c0-1.657 1.343-3 3-3s3 1.343 3 3c0 1.657-1.343 3-3 3s-3-1.343-3-3zM15 12h-4c-1.65 0-3 0.9-3 2v2h10v-2c0-1.1-1.35-2-3-2z" />
+                  <Label text="DOCTOR">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="left-bar-menu" />
+                  <String fx:value="active" />
+               </styleClass>
+            </VBox>
+            <VBox id="receptionistMenu" layoutX="10.0" layoutY="10.0" onMouseClicked="#clickMenu" prefHeight="720.0" prefWidth="143.0" styleClass="left-bar-menu">
+               <children>
+                  <SVGPath content="M12 2h20v4h-20v-4zM12 14h20v4h-20v-4zM12 26h20v4h-20v-4zM0 4c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4zM0 16c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4zM0 28c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4z" />
+                  <Label text="RECEPTIONIST">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox id="nurseMenu" layoutX="10.0" layoutY="90.0" onMouseClicked="#clickMenu" prefHeight="720.0" prefWidth="143.0" styleClass="left-bar-menu">
+               <children>
+                  <SVGPath content="M17 0l-3 3 3 3-7 8h-7l5.5 5.5-8.5 11.269v1.231h1.231l11.269-8.5 5.5 5.5v-7l8-7 3 3 3-3-15-15zM14 17l-2-2 7-7 2 2-7 7z" />
+                  <Label text="NURSE">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox id="adminMenu" layoutX="10.0" layoutY="170.0" onMouseClicked="#clickMenu" prefHeight="720.0" prefWidth="143.0" styleClass="left-bar-menu">
+               <children>
+                  <SVGPath content="M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z" />
+                  <Label text="ADMIN">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox id="Logout" layoutX="10.0" layoutY="250.0" onMouseClicked="#clickMenu" prefHeight="720.0" prefWidth="143.0">
+               <children>
+                  <SVGPath content="M20 4.581v4.249c1.131 0.494 2.172 1.2 3.071 2.099 1.889 1.889 2.929 4.4 2.929 7.071s-1.040 5.182-2.929 7.071c-1.889 1.889-4.4 2.929-7.071 2.929s-5.182-1.040-7.071-2.929c-1.889-1.889-2.929-4.4-2.929-7.071s1.040-5.182 2.929-7.071c0.899-0.899 1.94-1.606 3.071-2.099v-4.249c-5.783 1.721-10 7.077-10 13.419 0 7.732 6.268 14 14 14s14-6.268 14-14c0-6.342-4.217-11.698-10-13.419zM14 0h4v16h-4z" />
+                  <Label id="Logout" text="LOGOUT">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="left-bar-menu" />
+                  <String fx:value="logout" />
+               </styleClass>
+            </VBox>
+         </children>
+      </VBox>
+      <StackPane fx:id="contentView" HBox.hgrow="ALWAYS" />
+   </children>
+</HBox>

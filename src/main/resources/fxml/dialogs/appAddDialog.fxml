@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="526.0" styleClass="dialog" stylesheets="@../../style/dialogs/logoutDialog.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.dialogs.AppAddController">
+   <children>
+      <VBox>
+         <children>
+            <SVGPath content="M27 0c2.761 0 5 2.239 5 5 0 1.126-0.372 2.164-1 3l-2 2-7-7 2-2c0.836-0.628 1.874-1 3-1zM2 23l-2 9 9-2 18.5-18.5-7-7-18.5 18.5zM22.362 11.362l-14 14-1.724-1.724 14-14 1.724 1.724z" />
+         </children>
+         <styleClass>
+            <String fx:value="dialog-icon" />
+            <String fx:value="dialog-border-left" />
+         </styleClass>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="416.0" prefWidth="366.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label fx:id="title" prefHeight="8.0" prefWidth="275.0" styleClass="dialog-title" text="Create new appointment" />
+            <Label fx:id="message" />
+            <VBox prefHeight="294.0" prefWidth="318.0" styleClass="comboBoxPadding" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label layoutX="10.0" layoutY="30.0" text="Doctor" />
+                  <ComboBox fx:id="doctorCBox" prefWidth="175.0" promptText="Select doctor" />
+                  <Label layoutX="10.0" layoutY="30.0" text="Patient">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+                  <ComboBox fx:id="patientCBox" prefWidth="175.0" promptText="Select patient" />
+                  <Label text="Date">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox>
+                     <children>
+                        <DatePicker fx:id="appDate" />
+                        <Button fx:id="confirmButton" mnemonicParsing="false" text="Check availability">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin></Button>
+                     </children>
+                  </HBox>
+                  <Label text="Time">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+                  <ComboBox fx:id="appTime" prefWidth="175.0" promptText="Select time" />
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_RIGHT" styleClass="spacing-5">
+               <children>
+                  <Button fx:id="cancel" mnemonicParsing="false" onAction="#cancel" styleClass="width-120px" text="CANCEL" />
+                  <Button fx:id="okButton" mnemonicParsing="false" onAction="#save" styleClass="width-120px" text="OK" />
+               </children>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="dialog-border-right" />
+            <String fx:value="dialog-body" />
+            <String fx:value="spacing-5" />
+         </styleClass>
+      </VBox>
+   </children>
+</HBox>
