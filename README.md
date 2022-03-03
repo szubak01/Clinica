@@ -3,22 +3,16 @@
   <br>
 </h1>
 
-<h4 align="center">A framework for performing automated penetration tests based on a prepared scenario script.</h4>
+<h4 align="center">Desktop Applicattion for managing medical clinic.</h4>
 
 <p align="center">
-  <a href="#usage">Usage</a> •
-  <a href="#features">Features</a> •
-  <a href="#setup">Setup</a> •
-  <a href="#dockerfile">Dockerfile</a> •
-  <a href="#running">Running</a> •
-  <a href="#todo">Todo</a> •
-  <a href="#license">License</a> •
+  <a href="#functionalities">Functionalities</a> •
+  <a href="#technologies">Technologies</a> 
 </p>
 
 ---
 
 
-## Medical clinic management
 Desktop application written in JavaFx on top of the Spring Boot.</br>
 The application consists of four interdependent modules. Each of them is to speed up communication between a doctor, receptionist and nurse. 
 Thanks to the designed functionalities in the system, which automate and simplify the work of the above-mentioned positions.
