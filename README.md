@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="static/logo.jpg" alt="Medical clinic" width="260px"></a>
+  <img src="logo.jpg" alt="Medical clinic" width="260px"></a>
   <br>
 </h1>
 
