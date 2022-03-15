@@ -1,7 +1,3 @@
-<h1 align="center">
-  <img src="logo.jpg" alt="Medical clinic" width="260px"></a>
-  <br>
-</h1>
 
 <h4 align="center">Desktop Applicattion for managing medical clinic.</h4>
 
